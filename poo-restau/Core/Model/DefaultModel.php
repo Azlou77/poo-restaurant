@@ -1,6 +1,8 @@
 <?php
 namespace Core\Model;
 
+use Core\Database\Database;
+
 class DefaultModel extends Database{
     protected string $table; 
     protected string $entity;

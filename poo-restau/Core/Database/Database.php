@@ -83,7 +83,7 @@ class Database{
     }
     
     protected function getData(string $stmt, bool $one = false) : array|object{
-        $query = $this->pdo->query($stmt, \PDO::FETCH_CLASS, "App\Entity\\".$this->entity);
+        $query = $this->pdo->query($stmt, \PDO::FETCH_OBJ);
         if($one){
             $data = $query->fetch();
         }else{

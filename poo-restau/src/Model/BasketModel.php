@@ -8,9 +8,6 @@ class BasketModel extends DefaultModel{
     protected string $entity = "Commande";
     protected $pdo;
 
-    public function __construct(){
-        $this->pdo = (new Database())->getPdo();
-    }
 
     public function getBasket(){
         $statement = "SELECT * FROM ".$this->table." WHERE id_user = 1";
