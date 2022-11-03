@@ -1,0 +1,16 @@
+{
+    "name": "isaac/poo-restau",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Core\\": "Core/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yanisse",
+            "email": "yanisse321@gmail.com"
+        }
+    ],
+    "require": {}
+}
