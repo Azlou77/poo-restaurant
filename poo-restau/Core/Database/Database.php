@@ -83,12 +83,26 @@ class Database{
     }
     
     protected function getData(string $stmt, bool $one = false) : array|object{
-        $query = $this->pdo->query($stmt, \PDO::FETCH_OBJ);
+        $query = $this->pdo->query($stmt, \PDO::FETCH_CLASS, "App\Entity\\".$this->entity);
         if($one){
             $data = $query->fetch();
         }else{
             $data = $query->fetchAll();
         }
         return $data ? $data : throw new \UnexpectedValueException("Aucune donnée n'a été trouvée");
+    }
+
+    protected function updateData(string $stmt){
+        $query = $this->pdo->prepare($stmt);
+        $query->execute();
+
+        return $query->rowCount();
+    }
+
+    protected function insertData(string $stmt){
+        $query = $this->pdo->prepare($stmt);
+        $query->execute();
+
+        return $this->pdo->lastInsertId();
     }
 }

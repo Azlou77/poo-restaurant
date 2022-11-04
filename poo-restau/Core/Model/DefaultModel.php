@@ -9,11 +9,12 @@ class DefaultModel extends Database{
 
 
     public function findAll():array{
-        //...
+        $statement = "SELECT * FROM ".$this->table."";
+        return $this->getData($statement);
     }
 
     public function find(int $id):object{
-        $statement = "SELECT * FROM ".$this->table." WHERE id = ".$id;
-        return $this->getData($statement);
+        $statement = "SELECT * FROM ".$this->table." WHERE id=$id";
+        return $this->getData($statement, true);
     }
 }

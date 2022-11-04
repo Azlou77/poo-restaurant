@@ -1,10 +1,10 @@
 <?php
 namespace App\Controller;
 
-use Core\Database\Database;
+use Core\Controller\DefaultController;
 use App\Model\MenuModel;
 
-class MenuController extends Database{
+class MenuController extends DefaultController{
     protected MenuModel $model;
 
     public function __construct(){
@@ -12,6 +12,8 @@ class MenuController extends Database{
     }
 
     public function index(){
-        var_dump($this->model->getMenu());
+        $this->render('menu/index', [
+            'menus' => $this->model->findAll()
+        ]);
     }
 }
