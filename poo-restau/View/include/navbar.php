@@ -3,7 +3,7 @@
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" aria-expanded="true" data-bs-toggle="dropdown" href="#" style="color: white;">Notre carte</a>
-                        <div class="dropdown-menu show" data-bs-popper="none"><a class="dropdown-item" href="#">Menus</a>
+                        <div class="dropdown-menu show" data-bs-popper="none"><a class="dropdown-item" href="View/menus/menu.php">Menus</a>
                         <a class="dropdown-item" href="#">Boissons</a>
                         <a class="dropdown-item" href="#">Burgers</a>
                         </div>
