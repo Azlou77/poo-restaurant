@@ -13,4 +13,15 @@ class BasketModel extends DefaultModel{
         $statement = "SELECT * FROM ".$this->table." WHERE id_user = 1";
         return $this->getData($statement);
     }
+
+    public function updateBasket($id){
+        $statement = "UPDATE ".$this->table." SET status = 'Livraison' WHERE id_commande = $id";
+        return $this->updateData($statement);
+    }
+
+    public function updateBasketItems($items){                
+        $items = json_encode($items);
+        $statement = "UPDATE ".$this->table." SET items_id = '$items' WHERE id_user = 1";
+        return $this->updateData($statement);
+    }
 }

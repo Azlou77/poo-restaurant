@@ -13,4 +13,8 @@ class BasketController extends Database{
     public function index(){
         var_dump($this->model->getBasket());
     }
+    public function update(){
+        $this->model->updateBasketItems(array(1, 8, 5));
+    }
+
 }
