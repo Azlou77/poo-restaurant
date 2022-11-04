@@ -10,7 +10,6 @@ class ProductModel extends DefaultModel{
 
     public function createProduct($product)
     {
-        var_dump($product);
         $statement = "INSERT INTO ".$this->table." (name_product, prix_product, description_product, image) VALUES ('test', 10, 'test', 'test')";
         return $this->insertData($statement);
     }

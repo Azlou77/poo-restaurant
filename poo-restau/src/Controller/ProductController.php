@@ -27,8 +27,11 @@ class ProductController extends DefaultController{
     }
 
     function showOne(){
-        $this->render('product/products', [
-            'products' => $this->model->find($_GET['id'])
-        ]);
+        if(isset($_GET['id']) && !empty($_GET['id'])){
+            var_dump('ok');
+            $this->render('product/show', [
+                'product' => $this->model->find($_GET['id'])
+            ]);
+        }
     }
 }

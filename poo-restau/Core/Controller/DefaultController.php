@@ -7,6 +7,6 @@ class DefaultController{
             extract($parameters);
             require ROOT."/templates/$viewPath.php";
         $content = ob_get_clean();
-        require_once ROOT.'/templates/base.php';
+        require ROOT.'/templates/base.php';
     }
 }

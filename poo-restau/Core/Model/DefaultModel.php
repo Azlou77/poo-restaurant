@@ -13,9 +13,8 @@ class DefaultModel extends Database{
         return $this->getData($statement);
     }
 
-    public function find(int $id):array{
-        $statement = "SELECT * FROM ".$this->table." WHERE id = ".$id;
-        // var_dump($statement);
-        return $this->getData($statement);
+    public function find(int $id):object{
+        $statement = "SELECT * FROM ".$this->table." WHERE id=$id";
+        return $this->getData($statement, true);
     }
 }
