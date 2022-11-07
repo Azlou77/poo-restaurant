@@ -1,5 +1,5 @@
-
-        <!-- <h1 class="text-center">Les menus</h1>
+<!-- 
+        <h1 class="text-center">Les menus</h1>
         <table class="table table-striped table-hover">
             <thead>
             <tr>
@@ -12,7 +12,8 @@
             </tbody>
         </table> -->
 
-        <div><img src="assets/img/home/banner%20promo.webp" width="1730" height="713" style="padding-bottom: 0px;margin-bottom: -102px;"><button class="btn btn-primary" type="button" style="background: rgb(247, 168, 0);border-style: none;font-size: 31px;width: 250px;padding-top: 0px;margin-left: 655px;padding-bottom: 0px;margin-top: -161px;margin-bottom: -5px;padding-left: 0px;padding-right: 0px;">Découvrez-les</button></div>
+
+    <div><img src="assets/img/home/banner%20promo.webp" width="1730" height="713" style="padding-bottom: 0px;margin-bottom: -102px;"><button class="btn btn-primary" type="button" style="background: rgb(247, 168, 0);border-style: none;font-size: 31px;width: 250px;padding-top: 0px;margin-left: 655px;padding-bottom: 0px;margin-top: -161px;margin-bottom: -5px;padding-left: 0px;padding-right: 0px;">Découvrez-les</button></div>
     <div class="card">
         <div class="container py-4 py-xl-5">
             <div class="row mb-5">

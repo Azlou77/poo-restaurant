@@ -11,7 +11,6 @@ class Product{
     private int $id_category;
 
     public function __invoke(){
-        var_dump('bjr');
         $array = array();
         $methods = get_class_methods($this);
 
@@ -25,7 +24,6 @@ class Product{
             }
 
         }
-        var_dump($array);
         return $array;
     }
     public function getId():int{

@@ -16,7 +16,7 @@
     <div class="mb-3 form-floating">
         <label for="name">Catégorie</label>
         <select name="product_category">
-            <option value="1">Pizza</option>
+            <option value="1">Burger</option>
             <option value="2">Boisson</option>
             <option value="3">Dessert</option>
         </select>

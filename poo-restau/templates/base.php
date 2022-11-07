@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="assets/css/Projects-Grid-images.css">
 </head>
 <body>
+<ul>
+        <li><a href="http://localhost/poo-restaurant/poo-restau/?page=menu#">Home</a></li>
+        <li><a href="http://localhost/poo-restaurant/poo-restau/?page=product">Tout les Produits</a></li>
+        <li><a href="http://localhost/poo-restaurant/poo-restau/?page=product_add">Ajouter un Produit</a></li>
+        <li><a href="about.asp">About</a></li>
+    </ul>
     <?= $content ?>
     <?php require(ROOT.' ./View/include/footer.php') ?>
 </body>
