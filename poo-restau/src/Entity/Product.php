@@ -8,7 +8,26 @@ class Product{
     private int $prix_product;
     private string $description_product;
     private string $image;
+    private int $id_category;
 
+    public function __invoke(){
+        var_dump('bjr');
+        $array = array();
+        $methods = get_class_methods($this);
+
+        foreach($methods as $method){
+            if(str_contains($method, 'get')){
+                $key = strtolower(substr($method, 3));
+
+                if(method_exists($this, $method) && $method != 'getId'){
+                    $array[$key] = $this->$method();
+                }
+            }
+
+        }
+        var_dump($array);
+        return $array;
+    }
     public function getId():int{
         return $this->id;
     }
@@ -18,7 +37,7 @@ class Product{
     }
 
     public function setName(string $name):void{
-        $this->product_id = $name;
+        $this->name_product = $name;
     }
 
 
@@ -48,4 +67,28 @@ class Product{
 
 
 
+
+    /**
+     * Get the value of id_category
+     *
+     * @return int
+     */
+    public function getIdCategory(): int
+    {
+        return $this->id_category;
+    }
+
+    /**
+     * Set the value of id_category
+     *
+     * @param int $id_category
+     *
+     * @return self
+     */
+    public function setIdCategory(int $id_category): self
+    {
+        $this->id_category = $id_category;
+
+        return $this;
+    }
 }

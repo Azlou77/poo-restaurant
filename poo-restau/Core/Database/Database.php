@@ -38,7 +38,7 @@ class Database{
      * 
      * @var PDO
      */
-    private ?\PDO $pdo;
+    protected ?\PDO $pdo;
 
     
     /**
