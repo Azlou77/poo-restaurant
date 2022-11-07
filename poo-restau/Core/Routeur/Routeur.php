@@ -18,6 +18,9 @@ class Routeur{
                 case 'product_show':
                     (new ProductController)->showOne();
                     break;
+                case 'product_add':
+                    (new ProductController)->createProduct();
+                    break;
                 case 'basket':
                     (new BasketController)->index();
                     break;

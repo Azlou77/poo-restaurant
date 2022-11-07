@@ -6,6 +6,7 @@ use App\Model\MenuModel;
 
 class MenuController extends DefaultController{
     protected MenuModel $model;
+    
 
     public function __construct(){
         $this->model = new MenuModel();
