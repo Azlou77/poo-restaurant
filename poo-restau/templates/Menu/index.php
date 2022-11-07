@@ -56,7 +56,7 @@
             <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3" style="margin-left: 85px;">
             <?php foreach($menus as $menu): ?>
                 <div class="col">
-                    <div style="width: 300px;height: 300px;"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="assets/img/menus%20bon%20plans/<?= $menu->getImg() ?>">
+                    <div style="width: 300px;height: 300px;"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src='<?= "assets/img/menus/".$menu->getImg() ?>'>
                         <div class="py-4">
                             <h4 class="text-center" style="width: 329px;"><?= $menu->getName() ?></h4>
                         </div>
@@ -64,6 +64,7 @@
                 </div>
             <?php endforeach; ?> 
             </div>
+           
         </div>
     </div>
     

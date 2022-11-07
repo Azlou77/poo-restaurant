@@ -6,7 +6,7 @@ class Menu{
     private int $id_menu;
     private string $name_menu;
     private int $prix_menu;
-    private string $img;
+    private string $img_menu;
 
     public function getId():int{
         return $this->id_menu;
@@ -17,7 +17,7 @@ class Menu{
     }
 
     public function getImg():string{
-        return $this->img;
+        return $this->img_menu;
     }
 
     public function setName(string $name):void{

@@ -1,4 +1,4 @@
-<?php include "C:\xampp\htdocs\ipssi\poo-restaurant\poo-restau\View\include\header.php"; ?>
+<!-- <?php include "C:\xampp\htdocs\ipssi\poo-restaurant\poo-restau\View\include\header.php"; ?>
 <?php include "C:\xampp\htdocs\ipssi\poo-restaurant\poo-restau\View\include\navbar.php"; ?>
 
     <div><img src="assets/img/home/banner%20promo.webp" width="1730" height="713" style="padding-bottom: 0px;margin-bottom: -102px;"><button class="btn btn-primary" type="button" style="background: rgb(247, 168, 0);border-style: none;font-size: 31px;width: 250px;padding-top: 0px;margin-left: 655px;padding-bottom: 0px;margin-top: -161px;margin-bottom: -5px;padding-left: 0px;padding-right: 0px;">Découvrez-les</button></div>
@@ -69,4 +69,4 @@
 
 <?php
 include "View/include/footer.php";
-?>
+?> -->

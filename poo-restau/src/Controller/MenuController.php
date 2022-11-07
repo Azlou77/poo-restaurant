@@ -13,7 +13,7 @@ class MenuController extends DefaultController{
     }
 
     public function index(){
-        $this->render('menu/index', [
+        $this->render('Menu/index', [
             'menus' => $this->model->findAll()
         ]);
     }
