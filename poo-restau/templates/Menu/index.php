@@ -23,21 +23,21 @@
             </div>
             <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3" style="margin-left: 85px;">
                 <div class="col">
-                    <div style="width: 300px;height: 300px;"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="assets/img/meilleurs%20menus/master%20montagnard.jpg">
+                    <div style="width: 300px;height: 300px;"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="assets/img/menus%20bon%20plans/master%20montagnard.jpg">
                         <div class="py-4">
                             <h4 class="text-center">Master Montagnard</h4>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div style="width: 300px;height: 300px;"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="assets/img/meilleurs%20menus/mwii%20veggie%20whopper.jpg">
+                    <div style="width: 300px;height: 300px;"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="assets/img/menus%20bon%20plans/mwii%20veggie%20whopper.jpg">
                         <div class="py-4">
                             <h4 class="text-center">MWII Cheese</h4>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div style="width: 300px;height: 300px;"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="assets/img/meilleurs%20menus/mwii%20whopper%20cheese.jpg">
+                    <div style="width: 300px;height: 300px;"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="assets/img/menus%20bon%20plans/mwii%20whopper%20cheese.jpg">
                         <div class="py-4">
                             <h4 class="text-center">MWII Veggie Whooper</h4>
                         </div>
@@ -55,7 +55,7 @@
             <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3" style="margin-left: 85px;">
             <?php foreach($menus as $menu): ?>
                 <div class="col">
-                    <div style="width: 300px;height: 300px;"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="assets/img/menus%20bon%20plans/<?= $menu->getImage() ?>.jpg">
+                    <div style="width: 300px;height: 300px;"><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="assets/img/menus%20bon%20plans/<?= $menu->getImg() ?>">
                         <div class="py-4">
                             <h4 class="text-center" style="width: 329px;"><?= $menu->getName() ?></h4>
                         </div>
@@ -65,3 +65,4 @@
             </div>
         </div>
     </div>
+    
