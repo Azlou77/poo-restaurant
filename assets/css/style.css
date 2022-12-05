@@ -1,0 +1,11 @@
+.container-fluid{
+    margin-left: -20px;
+}
+
+.table > :not(caption) > * > *{
+    border-width:1px;
+}
+.table th{
+
+margin: 0;
+}
