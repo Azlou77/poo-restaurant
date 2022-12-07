@@ -6,10 +6,26 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit9b77b98352535be9f050752dd7600d45
 {
+    public static $files = array (
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'Psr\\Container\\' => 14,
+        ),
+        'F' => 
+        array (
+            'Faker\\' => 6,
+        ),
         'C' => 
         array (
             'Core\\' => 5,
+        ),
+        'B' => 
+        array (
+            'Bezhanov\\Faker\\' => 15,
         ),
         'A' => 
         array (
@@ -18,9 +34,21 @@ class ComposerStaticInit9b77b98352535be9f050752dd7600d45
     );
 
     public static $prefixDirsPsr4 = array (
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'Faker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fakerphp/faker/src/Faker',
+        ),
         'Core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Core',
+        ),
+        'Bezhanov\\Faker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mbezhanov/faker-provider-collection/src/Faker',
         ),
         'App\\' => 
         array (
